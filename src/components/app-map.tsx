@@ -12,7 +12,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Map, MapPlus } from 'lucide-react'
 import { getProvince } from '@/lib/utils'
 import { useState } from 'react'
-import { Button } from './ui/button'
 
 export default function AppMap({ data, width = 'auto', height = '80vh', center = [-2.5, 120], zoom = 5 }: { data: GroupedResult[]; width: string; height: string; center: [number, number]; zoom: number }) {
   const { province, currentLocation } = useLocation()
